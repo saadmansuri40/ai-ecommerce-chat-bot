@@ -39,7 +39,7 @@ def get_ai_response(message: str):
         }
     if "who are you" in message or "your name" in message:
         return {
-            "text": "I'm your personal AI shopping assistant for SAM BOT Store! I can help you find the latest gadgets, compare specs, and even guide you through checkout.",
+            "text": "I'm your personal shopping assistant for SAM BOT Store! I can help you find the latest gadgets, compare specs, and even guide you through checkout.",
             "products": [],
             "action": "small_talk"
         }

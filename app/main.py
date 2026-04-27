@@ -13,7 +13,7 @@ def home():
         with open("app/static/index.html", "r", encoding="utf-8") as f:
             html_content = f.read()
     except FileNotFoundError:
-        html_content = "<h1>Welcome to AI E-commerce Chatbot</h1>"
+        html_content = "<h1>Welcome to E-commerce Chatbot</h1>"
     return HTMLResponse(content=html_content)
 
 @app.get("/checkout", response_class=HTMLResponse)
