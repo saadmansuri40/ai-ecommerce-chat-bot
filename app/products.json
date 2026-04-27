@@ -1,0 +1,1415 @@
+[
+    {
+        "id": 1,
+        "category": "phone",
+        "name": "iPhone 17 Pro Max",
+        "price": "$1199",
+        "numeric_price": 1199,
+        "description": "Apple's flagship with A19 Pro.",
+        "specs": [
+            "6.7\" OLED",
+            "A19 Pro",
+            "48MP Camera",
+            "Titanium"
+        ],
+        "image_url": "/static/images/1.jpg"
+    },
+    {
+        "id": 2,
+        "category": "phone",
+        "name": "iPhone 17 Pro",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "Compact powerhouse from Apple.",
+        "specs": [
+            "6.1\" OLED",
+            "A19 Pro",
+            "48MP Camera",
+            "Titanium"
+        ],
+        "image_url": "/static/images/2.jpg"
+    },
+    {
+        "id": 3,
+        "category": "phone",
+        "name": "iPhone 17",
+        "price": "$799",
+        "numeric_price": 799,
+        "description": "The standard iPhone for everyone.",
+        "specs": [
+            "6.1\" OLED",
+            "A18 Bionic",
+            "48MP Camera"
+        ],
+        "image_url": "/static/images/3.jpg"
+    },
+    {
+        "id": 4,
+        "category": "phone",
+        "name": "iPhone 16",
+        "price": "$699",
+        "numeric_price": 699,
+        "description": "Great value iPhone.",
+        "specs": [
+            "6.1\" OLED",
+            "A15 Bionic",
+            "12MP Camera"
+        ],
+        "image_url": "/static/images/4.jpg"
+    },
+    {
+        "id": 5,
+        "category": "phone",
+        "name": "Samsung Galaxy S26 Ultra",
+        "price": "$1299",
+        "numeric_price": 1299,
+        "description": "The ultimate Android flagship.",
+        "specs": [
+            "6.8\" AMOLED",
+            "Snapdragon 8 Gen 5",
+            "200MP Camera",
+            "S-Pen"
+        ],
+        "image_url": "/static/images/5.jpg"
+    },
+    {
+        "id": 6,
+        "category": "phone",
+        "name": "Samsung Galaxy S26+",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "Larger screen, amazing performance.",
+        "specs": [
+            "6.7\" AMOLED",
+            "Snapdragon 8 Gen 5",
+            "50MP Camera"
+        ],
+        "image_url": "/static/images/6.jpg"
+    },
+    {
+        "id": 7,
+        "category": "phone",
+        "name": "Samsung Galaxy S26",
+        "price": "$799",
+        "numeric_price": 799,
+        "description": "Compact Android flagship.",
+        "specs": [
+            "6.2\" AMOLED",
+            "Snapdragon 8 Gen 5",
+            "50MP Camera"
+        ],
+        "image_url": "/static/images/7.jpg"
+    },
+    {
+        "id": 8,
+        "category": "phone",
+        "name": "Samsung Galaxy Z Fold 5",
+        "price": "$1799",
+        "numeric_price": 1799,
+        "description": "Premium foldable phone.",
+        "specs": [
+            "7.6\" Inner Display",
+            "Snapdragon 8 Gen 4",
+            "50MP Camera"
+        ],
+        "image_url": "/static/images/8.jpg"
+    },
+    {
+        "id": 9,
+        "category": "phone",
+        "name": "Samsung Galaxy Z Flip 5",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "Stylish flip phone.",
+        "specs": [
+            "6.7\" Foldable",
+            "Snapdragon 8 Gen 4",
+            "12MP Camera"
+        ],
+        "image_url": "/static/images/9.jpg"
+    },
+    {
+        "id": 10,
+        "category": "phone",
+        "name": "Google Pixel 8 Pro",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "Best camera and AI features.",
+        "specs": [
+            "6.7\" OLED",
+            "Tensor G3",
+            "50MP Camera",
+            "Thermometer"
+        ],
+        "image_url": "/static/images/10.jpg"
+    },
+    {
+        "id": 11,
+        "category": "phone",
+        "name": "Google Pixel 8",
+        "price": "$699",
+        "numeric_price": 699,
+        "description": "Great AI phone for less.",
+        "specs": [
+            "6.2\" OLED",
+            "Tensor G3",
+            "50MP Camera"
+        ],
+        "image_url": "/static/images/11.jpg"
+    },
+    {
+        "id": 12,
+        "category": "phone",
+        "name": "OnePlus 12",
+        "price": "$799",
+        "numeric_price": 799,
+        "description": "Fast and smooth.",
+        "specs": [
+            "6.8\" AMOLED",
+            "Snapdragon 8 Gen 5",
+            "Hasselblad Camera"
+        ],
+        "image_url": "/static/images/12.jpg"
+    },
+    {
+        "id": 13,
+        "category": "phone",
+        "name": "Sony Xperia 1 V",
+        "price": "$1199",
+        "numeric_price": 1199,
+        "description": "For creators and audiophiles.",
+        "specs": [
+            "6.5\" 4K OLED",
+            "Snapdragon 8 Gen 4",
+            "Pro Camera Apps"
+        ],
+        "image_url": "/static/images/13.jpg"
+    },
+    {
+        "id": 14,
+        "category": "laptop",
+        "name": "MacBook Pro 16\" (M5 Max)",
+        "price": "$3499",
+        "numeric_price": 3499,
+        "description": "Ultimate pro laptop.",
+        "specs": [
+            "16\" Liquid Retina XDR",
+            "M5 Max",
+            "32GB RAM",
+            "1TB SSD"
+        ],
+        "image_url": "/static/images/14.jpg"
+    },
+    {
+        "id": 15,
+        "category": "laptop",
+        "name": "MacBook Pro 14\" (M5 Pro)",
+        "price": "$1999",
+        "numeric_price": 1999,
+        "description": "Portable pro power.",
+        "specs": [
+            "14\" Liquid Retina XDR",
+            "M5 Pro",
+            "18GB RAM",
+            "512GB SSD"
+        ],
+        "image_url": "/static/images/15.jpg"
+    },
+    {
+        "id": 16,
+        "category": "laptop",
+        "name": "MacBook Air 15\" (M5)",
+        "price": "$1299",
+        "numeric_price": 1299,
+        "description": "Large screen, incredibly thin.",
+        "specs": [
+            "15.3\" Liquid Retina",
+            "M5",
+            "8GB RAM",
+            "256GB SSD"
+        ],
+        "image_url": "/static/images/16.jpg"
+    },
+    {
+        "id": 17,
+        "category": "laptop",
+        "name": "Dell XPS 15",
+        "price": "$1499",
+        "numeric_price": 1499,
+        "description": "Premium Windows ultrabook.",
+        "specs": [
+            "15.6\" OLED",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "image_url": "/static/images/17.jpg"
+    },
+    {
+        "id": 18,
+        "category": "laptop",
+        "name": "Dell XPS 13 Plus",
+        "price": "$1299",
+        "numeric_price": 1299,
+        "description": "Futuristic design.",
+        "specs": [
+            "13.4\" OLED",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "image_url": "/static/images/18.jpg"
+    },
+    {
+        "id": 19,
+        "category": "laptop",
+        "name": "Lenovo ThinkPad X1 Carbon",
+        "price": "$1399",
+        "numeric_price": 1399,
+        "description": "The business standard.",
+        "specs": [
+            "14\" IPS",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "image_url": "/static/images/19.jpg"
+    },
+    {
+        "id": 20,
+        "category": "laptop",
+        "name": "Asus ROG Zephyrus G14",
+        "price": "$1599",
+        "numeric_price": 1599,
+        "description": "Portable gaming powerhouse.",
+        "specs": [
+            "14\" Mini LED",
+            "Ryzen 9",
+            "RTX 4060",
+            "16GB RAM"
+        ],
+        "image_url": "/static/images/20.jpg"
+    },
+    {
+        "id": 21,
+        "category": "laptop",
+        "name": "Razer Blade 16",
+        "price": "$2699",
+        "numeric_price": 2699,
+        "description": "Premium gaming laptop.",
+        "specs": [
+            "16\" Mini LED",
+            "Intel Core i9",
+            "RTX 4080",
+            "32GB RAM"
+        ],
+        "image_url": "/static/images/21.jpg"
+    },
+    {
+        "id": 22,
+        "category": "laptop",
+        "name": "HP Spectre x360",
+        "price": "$1399",
+        "numeric_price": 1399,
+        "description": "Beautiful 2-in-1 laptop.",
+        "specs": [
+            "13.5\" OLED",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "image_url": "/static/images/22.jpg"
+    },
+    {
+        "id": 23,
+        "category": "watch",
+        "name": "Apple Watch Ultra 2",
+        "price": "$799",
+        "numeric_price": 799,
+        "description": "Rugged and capable.",
+        "specs": [
+            "Titanium Case",
+            "S9 Chip",
+            "Precision Finding"
+        ],
+        "image_url": "/static/images/23.jpg"
+    },
+    {
+        "id": 24,
+        "category": "watch",
+        "name": "Apple Watch Series 9",
+        "price": "$399",
+        "numeric_price": 399,
+        "description": "The essential smartwatch.",
+        "specs": [
+            "Aluminum/Stainless",
+            "S9 Chip",
+            "Double Tap"
+        ],
+        "image_url": "/static/images/24.jpg"
+    },
+    {
+        "id": 25,
+        "category": "watch",
+        "name": "Samsung Galaxy Watch 6 Classic",
+        "price": "$399",
+        "numeric_price": 399,
+        "description": "Rotating bezel is back.",
+        "specs": [
+            "Sapphire Crystal",
+            "Wear OS",
+            "Health Tracking"
+        ],
+        "image_url": "/static/images/25.jpg"
+    },
+    {
+        "id": 26,
+        "category": "watch",
+        "name": "Samsung Galaxy Watch 6",
+        "price": "$299",
+        "numeric_price": 299,
+        "description": "Sleek and sporty.",
+        "specs": [
+            "Sapphire Crystal",
+            "Wear OS",
+            "Fitness Tracking"
+        ],
+        "image_url": "/static/images/26.jpg"
+    },
+    {
+        "id": 27,
+        "category": "watch",
+        "name": "Garmin Fenix 7 Pro",
+        "price": "$799",
+        "numeric_price": 799,
+        "description": "Multisport GPS watch.",
+        "specs": [
+            "Solar Charging",
+            "Flashlight",
+            "Advanced Metrics"
+        ],
+        "image_url": "/static/images/27.jpg"
+    },
+    {
+        "id": 28,
+        "category": "watch",
+        "name": "Google Pixel Watch 2",
+        "price": "$349",
+        "numeric_price": 349,
+        "description": "Fitbit inside.",
+        "specs": [
+            "Domed Glass",
+            "Wear OS",
+            "Stress Tracking"
+        ],
+        "image_url": "/static/images/28.jpg"
+    },
+    {
+        "id": 29,
+        "category": "audio",
+        "name": "AirPods Pro (2nd Gen)",
+        "price": "$249",
+        "numeric_price": 249,
+        "description": "Excellent noise cancellation.",
+        "specs": [
+            "H2 Chip",
+            "ANC",
+            "Spatial Audio"
+        ],
+        "image_url": "/static/images/29.jpg"
+    },
+    {
+        "id": 30,
+        "category": "audio",
+        "name": "AirPods Max",
+        "price": "$549",
+        "numeric_price": 549,
+        "description": "High-fidelity over-ear headphones.",
+        "specs": [
+            "H1 Chip",
+            "ANC",
+            "Premium Design"
+        ],
+        "image_url": "/static/images/30.jpg"
+    },
+    {
+        "id": 31,
+        "category": "audio",
+        "name": "Sony WH-1000XM5",
+        "price": "$398",
+        "numeric_price": 398,
+        "description": "Industry leading noise cancellation.",
+        "specs": [
+            "V1 Processor",
+            "30hr Battery",
+            "LDAC"
+        ],
+        "image_url": "/static/images/31.jpg"
+    },
+    {
+        "id": 32,
+        "category": "audio",
+        "name": "Sony WF-1000XM5",
+        "price": "$298",
+        "numeric_price": 298,
+        "description": "Premium wireless earbuds.",
+        "specs": [
+            "V2 Processor",
+            "ANC",
+            "High-Res Audio"
+        ],
+        "image_url": "/static/images/32.jpg"
+    },
+    {
+        "id": 33,
+        "category": "audio",
+        "name": "Bose QuietComfort Ultra",
+        "price": "$429",
+        "numeric_price": 429,
+        "description": "Unmatched comfort and silence.",
+        "specs": [
+            "Immersive Audio",
+            "CustomTune",
+            "ANC"
+        ],
+        "image_url": "/static/images/33.jpg"
+    },
+    {
+        "id": 34,
+        "category": "audio",
+        "name": "Sennheiser Momentum 4",
+        "price": "$349",
+        "numeric_price": 349,
+        "description": "Incredible battery life.",
+        "specs": [
+            "60hr Battery",
+            "Audiophile Sound",
+            "ANC"
+        ],
+        "image_url": "/static/images/34.jpg"
+    },
+    {
+        "id": 35,
+        "category": "tablet",
+        "name": "iPad Pro 12.9\"",
+        "price": "$1099",
+        "numeric_price": 1099,
+        "description": "The ultimate iPad.",
+        "specs": [
+            "12.9\" Mini LED",
+            "M4 Chip",
+            "Face ID"
+        ],
+        "image_url": "/static/images/35.jpg"
+    },
+    {
+        "id": 36,
+        "category": "tablet",
+        "name": "iPad Air",
+        "price": "$599",
+        "numeric_price": 599,
+        "description": "Light and powerful.",
+        "specs": [
+            "10.9\" LCD",
+            "M1 Chip",
+            "Touch ID"
+        ],
+        "image_url": "/static/images/36.jpg"
+    },
+    {
+        "id": 37,
+        "category": "tablet",
+        "name": "Samsung Galaxy Tab S9 Ultra",
+        "price": "$1199",
+        "numeric_price": 1199,
+        "description": "Massive screen tablet.",
+        "specs": [
+            "14.6\" AMOLED",
+            "Snapdragon 8 Gen 4",
+            "S-Pen Included"
+        ],
+        "image_url": "/static/images/37.jpg"
+    },
+    {
+        "id": 38,
+        "category": "tablet",
+        "name": "Microsoft Surface Pro 9",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "The tablet that can replace your laptop.",
+        "specs": [
+            "13\" PixelSense",
+            "Intel Core i5",
+            "Windows 11"
+        ],
+        "image_url": "/static/images/38.jpg"
+    },
+    {
+        "id": 39,
+        "category": "tablet",
+        "name": "Amazon Tablet Ultra 15",
+        "price": "$480",
+        "numeric_price": 480,
+        "description": "A reliable tablet from Amazon with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/39.jpg"
+    },
+    {
+        "id": 40,
+        "category": "watch",
+        "name": "Fossil Watch Plus 15",
+        "price": "$1116",
+        "numeric_price": 1116,
+        "description": "A reliable watch from Fossil with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/40.jpg"
+    },
+    {
+        "id": 41,
+        "category": "laptop",
+        "name": "Samsung Laptop Max 10",
+        "price": "$610",
+        "numeric_price": 610,
+        "description": "A reliable laptop from Samsung with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/41.jpg"
+    },
+    {
+        "id": 42,
+        "category": "phone",
+        "name": "Oppo Phone Lite 2",
+        "price": "$127",
+        "numeric_price": 127,
+        "description": "A reliable phone from Oppo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/42.jpg"
+    },
+    {
+        "id": 43,
+        "category": "phone",
+        "name": "Asus Phone Pro 5",
+        "price": "$993",
+        "numeric_price": 993,
+        "description": "A reliable phone from Asus with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/43.jpg"
+    },
+    {
+        "id": 44,
+        "category": "tablet",
+        "name": "Amazon Tablet Pro 1",
+        "price": "$94",
+        "numeric_price": 94,
+        "description": "A reliable tablet from Amazon with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/44.jpg"
+    },
+    {
+        "id": 45,
+        "category": "audio",
+        "name": "JBL Audio Plus 4",
+        "price": "$1344",
+        "numeric_price": 1344,
+        "description": "A reliable audio from JBL with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/45.jpg"
+    },
+    {
+        "id": 46,
+        "category": "watch",
+        "name": "Fossil Watch Max 1",
+        "price": "$1055",
+        "numeric_price": 1055,
+        "description": "A reliable watch from Fossil with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/46.jpg"
+    },
+    {
+        "id": 47,
+        "category": "laptop",
+        "name": "Acer Laptop Classic 6",
+        "price": "$518",
+        "numeric_price": 518,
+        "description": "A reliable laptop from Acer with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/47.jpg"
+    },
+    {
+        "id": 48,
+        "category": "audio",
+        "name": "Jabra Audio Plus 14",
+        "price": "$252",
+        "numeric_price": 252,
+        "description": "A reliable audio from Jabra with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/48.jpg"
+    },
+    {
+        "id": 49,
+        "category": "laptop",
+        "name": "LG Laptop Lite 14",
+        "price": "$133",
+        "numeric_price": 133,
+        "description": "A reliable laptop from LG with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/49.jpg"
+    },
+    {
+        "id": 50,
+        "category": "phone",
+        "name": "Motorola Phone Lite 1",
+        "price": "$172",
+        "numeric_price": 172,
+        "description": "A reliable phone from Motorola with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/50.jpg"
+    },
+    {
+        "id": 51,
+        "category": "laptop",
+        "name": "Acer Laptop Ultra 11",
+        "price": "$635",
+        "numeric_price": 635,
+        "description": "A reliable laptop from Acer with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/51.jpg"
+    },
+    {
+        "id": 52,
+        "category": "laptop",
+        "name": "LG Laptop Pro 2",
+        "price": "$109",
+        "numeric_price": 109,
+        "description": "A reliable laptop from LG with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/52.jpg"
+    },
+    {
+        "id": 53,
+        "category": "laptop",
+        "name": "Gigabyte Laptop Pro 10",
+        "price": "$1334",
+        "numeric_price": 1334,
+        "description": "A reliable laptop from Gigabyte with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/53.jpg"
+    },
+    {
+        "id": 54,
+        "category": "watch",
+        "name": "Fossil Watch Max 13",
+        "price": "$514",
+        "numeric_price": 514,
+        "description": "A reliable watch from Fossil with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/54.jpg"
+    },
+    {
+        "id": 55,
+        "category": "laptop",
+        "name": "LG Laptop Plus 15",
+        "price": "$298",
+        "numeric_price": 298,
+        "description": "A reliable laptop from LG with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/55.jpg"
+    },
+    {
+        "id": 56,
+        "category": "laptop",
+        "name": "Samsung Laptop Lite 6",
+        "price": "$957",
+        "numeric_price": 957,
+        "description": "A reliable laptop from Samsung with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/56.jpg"
+    },
+    {
+        "id": 57,
+        "category": "tablet",
+        "name": "Lenovo Tablet Pro 15",
+        "price": "$834",
+        "numeric_price": 834,
+        "description": "A reliable tablet from Lenovo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/57.jpg"
+    },
+    {
+        "id": 58,
+        "category": "tablet",
+        "name": "Xiaomi Tablet Pro 12",
+        "price": "$1262",
+        "numeric_price": 1262,
+        "description": "A reliable tablet from Xiaomi with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/58.jpg"
+    },
+    {
+        "id": 59,
+        "category": "tablet",
+        "name": "Lenovo Tablet Ultra 9",
+        "price": "$587",
+        "numeric_price": 587,
+        "description": "A reliable tablet from Lenovo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/59.jpg"
+    },
+    {
+        "id": 60,
+        "category": "phone",
+        "name": "Vivo Phone Max 13",
+        "price": "$1277",
+        "numeric_price": 1277,
+        "description": "A reliable phone from Vivo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/60.jpg"
+    },
+    {
+        "id": 61,
+        "category": "tablet",
+        "name": "Amazon Tablet Plus 14",
+        "price": "$1465",
+        "numeric_price": 1465,
+        "description": "A reliable tablet from Amazon with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/61.jpg"
+    },
+    {
+        "id": 62,
+        "category": "watch",
+        "name": "Fossil Watch Max 14",
+        "price": "$785",
+        "numeric_price": 785,
+        "description": "A reliable watch from Fossil with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/62.jpg"
+    },
+    {
+        "id": 63,
+        "category": "audio",
+        "name": "Anker Audio Max 3",
+        "price": "$1220",
+        "numeric_price": 1220,
+        "description": "A reliable audio from Anker with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/63.jpg"
+    },
+    {
+        "id": 64,
+        "category": "phone",
+        "name": "Asus Phone Pro 9",
+        "price": "$1010",
+        "numeric_price": 1010,
+        "description": "A reliable phone from Asus with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/64.jpg"
+    },
+    {
+        "id": 65,
+        "category": "audio",
+        "name": "Bowers & Wilkins Audio Max 14",
+        "price": "$836",
+        "numeric_price": 836,
+        "description": "A reliable audio from Bowers & Wilkins with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/65.jpg"
+    },
+    {
+        "id": 66,
+        "category": "phone",
+        "name": "Asus Phone Classic 4",
+        "price": "$1297",
+        "numeric_price": 1297,
+        "description": "A reliable phone from Asus with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/66.jpg"
+    },
+    {
+        "id": 67,
+        "category": "laptop",
+        "name": "Gigabyte Laptop Lite 15",
+        "price": "$1314",
+        "numeric_price": 1314,
+        "description": "A reliable laptop from Gigabyte with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/67.jpg"
+    },
+    {
+        "id": 68,
+        "category": "watch",
+        "name": "Suunto Watch Ultra 11",
+        "price": "$91",
+        "numeric_price": 91,
+        "description": "A reliable watch from Suunto with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/68.jpg"
+    },
+    {
+        "id": 69,
+        "category": "audio",
+        "name": "Beats Audio Max 14",
+        "price": "$261",
+        "numeric_price": 261,
+        "description": "A reliable audio from Beats with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/69.jpg"
+    },
+    {
+        "id": 70,
+        "category": "watch",
+        "name": "Suunto Watch Ultra 14",
+        "price": "$248",
+        "numeric_price": 248,
+        "description": "A reliable watch from Suunto with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/70.jpg"
+    },
+    {
+        "id": 71,
+        "category": "tablet",
+        "name": "Xiaomi Tablet Ultra 14",
+        "price": "$154",
+        "numeric_price": 154,
+        "description": "A reliable tablet from Xiaomi with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/71.jpg"
+    },
+    {
+        "id": 72,
+        "category": "phone",
+        "name": "Xiaomi Phone Lite 10",
+        "price": "$1438",
+        "numeric_price": 1438,
+        "description": "A reliable phone from Xiaomi with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/72.jpg"
+    },
+    {
+        "id": 73,
+        "category": "laptop",
+        "name": "Samsung Laptop Pro 4",
+        "price": "$1408",
+        "numeric_price": 1408,
+        "description": "A reliable laptop from Samsung with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/73.jpg"
+    },
+    {
+        "id": 74,
+        "category": "audio",
+        "name": "JBL Audio Plus 5",
+        "price": "$703",
+        "numeric_price": 703,
+        "description": "A reliable audio from JBL with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/74.jpg"
+    },
+    {
+        "id": 75,
+        "category": "watch",
+        "name": "Amazfit Watch Max 12",
+        "price": "$561",
+        "numeric_price": 561,
+        "description": "A reliable watch from Amazfit with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/75.jpg"
+    },
+    {
+        "id": 76,
+        "category": "watch",
+        "name": "Fossil Watch Lite 12",
+        "price": "$1194",
+        "numeric_price": 1194,
+        "description": "A reliable watch from Fossil with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/76.jpg"
+    },
+    {
+        "id": 77,
+        "category": "audio",
+        "name": "Beats Audio Lite 15",
+        "price": "$1254",
+        "numeric_price": 1254,
+        "description": "A reliable audio from Beats with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/77.jpg"
+    },
+    {
+        "id": 78,
+        "category": "phone",
+        "name": "Vivo Phone Classic 5",
+        "price": "$371",
+        "numeric_price": 371,
+        "description": "A reliable phone from Vivo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/78.jpg"
+    },
+    {
+        "id": 79,
+        "category": "phone",
+        "name": "Asus Phone Lite 2",
+        "price": "$66",
+        "numeric_price": 66,
+        "description": "A reliable phone from Asus with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/79.jpg"
+    },
+    {
+        "id": 80,
+        "category": "laptop",
+        "name": "Gigabyte Laptop Classic 5",
+        "price": "$1341",
+        "numeric_price": 1341,
+        "description": "A reliable laptop from Gigabyte with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/80.jpg"
+    },
+    {
+        "id": 81,
+        "category": "audio",
+        "name": "JBL Audio Classic 3",
+        "price": "$125",
+        "numeric_price": 125,
+        "description": "A reliable audio from JBL with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/81.jpg"
+    },
+    {
+        "id": 82,
+        "category": "watch",
+        "name": "Suunto Watch Ultra 4",
+        "price": "$731",
+        "numeric_price": 731,
+        "description": "A reliable watch from Suunto with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/82.jpg"
+    },
+    {
+        "id": 83,
+        "category": "audio",
+        "name": "Anker Audio Pro 9",
+        "price": "$284",
+        "numeric_price": 284,
+        "description": "A reliable audio from Anker with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/83.jpg"
+    },
+    {
+        "id": 84,
+        "category": "phone",
+        "name": "Oppo Phone Lite 1",
+        "price": "$997",
+        "numeric_price": 997,
+        "description": "A reliable phone from Oppo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/84.jpg"
+    },
+    {
+        "id": 85,
+        "category": "audio",
+        "name": "Anker Audio Lite 1",
+        "price": "$709",
+        "numeric_price": 709,
+        "description": "A reliable audio from Anker with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/85.jpg"
+    },
+    {
+        "id": 86,
+        "category": "watch",
+        "name": "Suunto Watch Plus 14",
+        "price": "$297",
+        "numeric_price": 297,
+        "description": "A reliable watch from Suunto with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/86.jpg"
+    },
+    {
+        "id": 87,
+        "category": "phone",
+        "name": "Motorola Phone Lite 6",
+        "price": "$917",
+        "numeric_price": 917,
+        "description": "A reliable phone from Motorola with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/87.jpg"
+    },
+    {
+        "id": 88,
+        "category": "phone",
+        "name": "Vivo Phone Plus 5",
+        "price": "$253",
+        "numeric_price": 253,
+        "description": "A reliable phone from Vivo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/88.jpg"
+    },
+    {
+        "id": 89,
+        "category": "phone",
+        "name": "Motorola Phone Max 12",
+        "price": "$767",
+        "numeric_price": 767,
+        "description": "A reliable phone from Motorola with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/89.jpg"
+    },
+    {
+        "id": 90,
+        "category": "laptop",
+        "name": "Samsung Laptop Lite 8",
+        "price": "$737",
+        "numeric_price": 737,
+        "description": "A reliable laptop from Samsung with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/90.jpg"
+    },
+    {
+        "id": 91,
+        "category": "audio",
+        "name": "Bowers & Wilkins Audio Max 13",
+        "price": "$1500",
+        "numeric_price": 1500,
+        "description": "A reliable audio from Bowers & Wilkins with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/91.jpg"
+    },
+    {
+        "id": 92,
+        "category": "tablet",
+        "name": "Lenovo Tablet Ultra 3",
+        "price": "$453",
+        "numeric_price": 453,
+        "description": "A reliable tablet from Lenovo with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/92.jpg"
+    },
+    {
+        "id": 93,
+        "category": "tablet",
+        "name": "Xiaomi Tablet Max 9",
+        "price": "$915",
+        "numeric_price": 915,
+        "description": "A reliable tablet from Xiaomi with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/93.jpg"
+    },
+    {
+        "id": 94,
+        "category": "laptop",
+        "name": "MSI Laptop Lite 2",
+        "price": "$862",
+        "numeric_price": 862,
+        "description": "A reliable laptop from MSI with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/94.jpg"
+    },
+    {
+        "id": 95,
+        "category": "tablet",
+        "name": "Amazon Tablet Ultra 7",
+        "price": "$999",
+        "numeric_price": 999,
+        "description": "A reliable tablet from Amazon with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/95.jpg"
+    },
+    {
+        "id": 96,
+        "category": "watch",
+        "name": "Suunto Watch Plus 1",
+        "price": "$689",
+        "numeric_price": 689,
+        "description": "A reliable watch from Suunto with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/96.jpg"
+    },
+    {
+        "id": 97,
+        "category": "watch",
+        "name": "Amazfit Watch Ultra 9",
+        "price": "$202",
+        "numeric_price": 202,
+        "description": "A reliable watch from Amazfit with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/97.jpg"
+    },
+    {
+        "id": 98,
+        "category": "tablet",
+        "name": "Xiaomi Tablet Pro 3",
+        "price": "$478",
+        "numeric_price": 478,
+        "description": "A reliable tablet from Xiaomi with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/98.jpg"
+    },
+    {
+        "id": 99,
+        "category": "tablet",
+        "name": "Amazon Tablet Max 14",
+        "price": "$735",
+        "numeric_price": 735,
+        "description": "A reliable tablet from Amazon with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/99.jpg"
+    },
+    {
+        "id": 100,
+        "category": "audio",
+        "name": "JBL Audio Max 1",
+        "price": "$321",
+        "numeric_price": 321,
+        "description": "A reliable audio from JBL with great features.",
+        "specs": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+        ],
+        "image_url": "/static/images/100.jpg"
+    }
+]

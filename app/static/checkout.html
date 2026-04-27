@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM BOT Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --glass-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --success: #10b981;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: var(--text-light);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .checkout-container {
+            display: flex;
+            flex-wrap: wrap; /* On small screens, the right side will fall under the left side */
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto; /* Horizontally centered */
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .product-summary {
+            flex: 1 1 350px; /* Takes up 1 part, minimum 350px wide */
+            background: rgba(15, 23, 42, 0.4);
+            padding: 40px;
+            border-right: 1px solid var(--glass-border);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .product-summary h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        #product-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            background: #cbd5e1;
+            display: block; /* Removes bottom spacing issues */
+        }
+
+        #product-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        #product-price {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #4ade80;
+        }
+
+        .checkout-form {
+            flex: 2 1 400px; /* Takes up 2 parts, minimum 400px wide */
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .checkout-form h2 {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+            outline: none;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+
+        .payment-options {
+            display: flex; 
+            gap: 10px; 
+            margin-bottom: 5px;
+        }
+        .pay-option-label {
+            flex: 1; 
+            padding: 12px; 
+            border: 1px solid var(--glass-border); 
+            border-radius: 8px; 
+            cursor: pointer; 
+            background: rgba(255,255,255,0.05); 
+            text-align: center; 
+            color: var(--text-light); 
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .pay-option-label:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        input[type="radio"]:checked + .pay-option-label {
+            border-color: var(--primary);
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--primary);
+        }
+
+        .pay-btn {
+            margin-top: 20px;
+            padding: 18px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .pay-btn:hover {
+            background: var(--primary-hover);
+        }
+        .pay-btn:active {
+            transform: scale(0.98);
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: var(--text-light);
+        }
+
+        #success-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .success-content {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            animation: fadeIn 0.3s ease-out;
+        }
+        .success-content h2 { color: var(--success); margin-bottom: 15px; font-size: 2rem;}
+        
+        @media (max-width: 768px) {
+            .product-summary { border-right: none; border-bottom: 1px solid var(--glass-border); }
+            body { padding: 20px 10px; }
+            .payment-options { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="checkout-container">
+        <div class="product-summary">
+            <a href="/" class="back-link">← Back to Store</a>
+            <h2>Order Summary</h2>
+            <img id="product-image" src="" alt="Product">
+            <div id="product-name">Loading...</div>
+            <div id="product-price">...</div>
+        </div>
+
+        <div class="checkout-form">
+            <h2>Shipping Details</h2>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" placeholder="123 AI Street, Tech City" required>
+            </div>
+
+            <h2 style="margin-top: 20px;">Payment Method</h2>
+            
+            <div class="payment-options">
+                <label style="flex:1; cursor: pointer;">
+                    <input type="radio" name="payment_method" value="card" checked onchange="togglePaymentMethod('card')" style="display:none;"> 
+                    <div class="pay-option-label">Credit Card</div>
+                </label>
+                <label style="flex:1; cursor: pointer;">
+                    <input type="radio" name="payment_method" value="upi" onchange="togglePaymentMethod('upi')" style="display:none;"> 
+                    <div class="pay-option-label">UPI ID</div>
+                </label>
+                <label style="flex:1; cursor: pointer;">
+                    <input type="radio" name="payment_method" value="cod" onchange="togglePaymentMethod('cod')" style="display:none;"> 
+                    <div class="pay-option-label">Cash on Delivery</div>
+                </label>
+            </div>
+
+            <div id="card-fields">
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input type="text" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                </div>
+                <div class="form-row" style="margin-top: 15px;">
+                    <div class="form-group">
+                        <label>Expiry Date</label>
+                        <input type="text" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="password" placeholder="123" maxlength="3" required>
+                    </div>
+                </div>
+            </div>
+
+            <div id="upi-fields" style="display: none;">
+                <div class="form-group">
+                    <label>UPI ID</label>
+                    <input type="text" placeholder="username@upi">
+                </div>
+            </div>
+
+            <div id="cod-fields" style="display: none; color: var(--text-muted); font-size: 0.95rem; margin-top: 10px;">
+                You will pay the exact amount with cash when the product arrives at your doorstep. No extra fees applied.
+            </div>
+
+            <button class="pay-btn" id="pay-btn" onclick="processPayment()">Complete Purchase</button>
+        </div>
+    </div>
+
+    <div id="success-modal">
+        <div class="success-content">
+            <h2>🎉 Order Confirmed!</h2>
+            <p>Your payment was successful and your order is being processed.</p>
+            <br><br>
+            <a href="/" style="color:var(--bg-color); background:var(--text-light); padding: 12px 24px; border-radius: 8px; text-decoration:none; font-weight:bold; transition: background 0.2s;">Return to Store</a>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const pName = urlParams.get('name') || "Unknown Product";
+        const pPrice = urlParams.get('price') || "$0.00";
+        let pImage = urlParams.get('image');
+        
+        if (!pImage || pImage === "null" || pImage.trim() === "") {
+            pImage = "/static/images/phone.jpg";
+        }
+
+        document.getElementById('product-name').textContent = pName;
+        document.getElementById('product-price').textContent = pPrice;
+        
+        const imgEl = document.getElementById('product-image');
+        imgEl.src = pImage;
+        imgEl.onerror = function() {
+            this.src = '/static/images/phone.jpg';
+        };
+
+        document.getElementById('pay-btn').textContent = "Pay " + pPrice;
+
+        function togglePaymentMethod(method) {
+            document.getElementById('card-fields').style.display = method === 'card' ? 'block' : 'none';
+            document.getElementById('upi-fields').style.display = method === 'upi' ? 'block' : 'none';
+            document.getElementById('cod-fields').style.display = method === 'cod' ? 'block' : 'none';
+            
+            const btn = document.getElementById('pay-btn');
+            if (method === 'cod') {
+                btn.textContent = "Confirm Order";
+            } else {
+                btn.textContent = "Pay " + pPrice;
+            }
+        }
+
+        function processPayment() {
+            const btn = document.getElementById('pay-btn');
+            btn.textContent = "Processing...";
+            btn.style.opacity = "0.7";
+            
+            setTimeout(() => {
+                document.getElementById('success-modal').style.display = "flex";
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
