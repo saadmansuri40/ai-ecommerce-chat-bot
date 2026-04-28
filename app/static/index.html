@@ -36,28 +36,51 @@
             position: relative;
         }
 
-        .aurora-bg {
-            position: absolute;
+        .corner-bg-container {
+            position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
+            z-index: -2;
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
             overflow: hidden;
-            z-index: -1;
-            background: var(--bg-base);
         }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.6;
-            animation: float 20s infinite ease-in-out alternate;
-        }
-        .orb-1 { width: 50vw; height: 50vw; background: #1e1b4b; top: -10%; left: -10%; animation-delay: 0s; }
-        .orb-2 { width: 40vw; height: 40vw; background: #0f3c4c; bottom: -10%; right: -10%; animation-delay: -5s; }
-        .orb-3 { width: 45vw; height: 45vw; background: #2e1065; top: 30%; left: 30%; animation-delay: -10s; }
 
-        @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(5%, 10%) scale(1.1); }
-            100% { transform: translate(-5%, -10%) scale(0.9); }
+        .corner-img {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-size: 85%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #ffffff;
+            border-radius: 28px;
+            border: 5px solid #ffffff;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 255, 255, 0.15), inset 0 0 15px rgba(0,0,0,0.05);
+            opacity: 0.85;
+            animation: floatAnim 8s ease-in-out infinite alternate;
+            transform-origin: center;
+        }
+
+        .corner-img.top-left { top: 40px; left: 40px; animation-delay: 0s; }
+        .corner-img.top-right { top: 40px; right: 40px; animation-delay: 1.5s; }
+        .corner-img.bottom-left { bottom: 40px; left: 40px; animation-delay: 3s; }
+        .corner-img.bottom-right { bottom: 40px; right: 40px; animation-delay: 4.5s; }
+        .corner-img.center { 
+            top: 50%; left: 50%; 
+            width: 280px; height: 280px;
+            border-radius: 40px;
+            opacity: 0.4; 
+            animation: centerFloat 10s ease-in-out infinite alternate; 
+            z-index: -1;
+        }
+
+        @keyframes floatAnim {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(20px) rotate(6deg); }
+        }
+
+        @keyframes centerFloat {
+            0% { transform: translate(-50%, -50%) scale(1) rotate(-3deg); }
+            100% { transform: translate(-50%, -45%) scale(1.05) rotate(3deg); }
         }
 
         .chat-container {
@@ -361,10 +384,12 @@
 </head>
 <body>
 
-    <div class="aurora-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+    <div class="corner-bg-container">
+        <div class="corner-img top-left" style="background-image: url('/static/images/11.webp');"></div>
+        <div class="corner-img top-right" style="background-image: url('/static/images/22.webp');"></div>
+        <div class="corner-img bottom-left" style="background-image: url('/static/images/33.webp');"></div>
+        <div class="corner-img bottom-right" style="background-image: url('/static/images/44.webp');"></div>
+        <div class="corner-img center" style="background-image: url('/static/images/55.webp');"></div>
     </div>
 
     <div class="chat-container">
