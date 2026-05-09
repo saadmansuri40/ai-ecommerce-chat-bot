@@ -25,6 +25,15 @@ def checkout():
         html_content = "<h1>Checkout Page Not Found</h1>"
     return HTMLResponse(content=html_content)
 
+@app.get("/login", response_class=HTMLResponse)
+def login():
+    try:
+        with open("app/static/login.html", "r", encoding="utf-8") as f:
+            html_content = f.read()
+    except FileNotFoundError:
+        html_content = "<h1>Login Page Not Found</h1>"
+    return HTMLResponse(content=html_content)
+
 @app.get("/chat/{message}")
 def api_chat(message: str):
     return get_ai_response(message)

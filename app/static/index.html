@@ -112,6 +112,13 @@
             align-items: center;
             gap: 15px;
             background: rgba(15, 23, 42, 0.2);
+            justify-content: space-between;
+        }
+
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
         
         .header-avatar {
@@ -145,6 +152,25 @@
             background: #4ade80;
             border-radius: 50%;
             box-shadow: 0 0 10px #4ade80;
+        }
+
+        .header-login-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .header-login-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+            transform: translateY(-2px);
         }
 
         .chatbox {
@@ -394,11 +420,14 @@
 
     <div class="chat-container">
         <div class="chat-header">
-            <div class="header-avatar">✨</div>
-            <div>
-                <div class="header-title">SAM BOT</div>
-                <div class="header-status"><div class="status-dot"></div> Online</div>
+            <div class="header-info">
+                <div class="header-avatar">✨</div>
+                <div>
+                    <div class="header-title">SAM BOT</div>
+                    <div class="header-status"><div class="status-dot"></div> Online</div>
+                </div>
             </div>
+            <a href="/login" class="header-login-btn">Admin Login</a>
         </div>
 
         <div class="chatbox" id="chatbox">
